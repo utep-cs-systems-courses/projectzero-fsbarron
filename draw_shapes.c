@@ -1,3 +1,5 @@
+
+
 #include <stdio.h>
 #include "draw.h"
 
@@ -25,4 +27,9 @@ void print_triangle(int leftCol, int size)
     putchar('\n');
   }
 }
-
+//print arrow
+void print_arrow(int leftCol, int size){
+  int arrowSize = size;
+  print_triangle(leftCol-4, arrowSize);
+  print_square(leftCol, arrowSize);
+  }
